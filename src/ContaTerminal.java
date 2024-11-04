@@ -4,7 +4,7 @@ public class ContaTerminal {
     public static void main(String[] args) {
         int numero = 0;
         double saldo = 0;
-        String agencia = "", nomeCliente = "";
+        String agencia = "", nome = "";
 
         Scanner scan = new Scanner(System.in);
 
@@ -16,7 +16,7 @@ public class ContaTerminal {
             agencia = scan.next();
 
             System.out.println("Por favor, digite seu nome:");
-            nomeCliente = scan.next();
+            nome = scan.next();
 
             System.out.println("Qual valor do seu saldo inicial?");
             saldo = Double.valueOf(scan.next());
@@ -27,7 +27,7 @@ public class ContaTerminal {
             System.out.println("Por favor, insira o dado corretamente");
         }
 
-        System.out.println("Olá " +  nomeCliente + " obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numero + " e seu saldo R$" + saldo + " já está disponível para saque.");
+        System.out.println("Olá " +  nome + " obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numero + " e seu saldo R$" + saldo + " já está disponível para saque.");
         scan.close();
     }
 }
